@@ -1,0 +1,74 @@
+{
+  "factual_knowledge": [
+    {
+      "id": "fact_001",
+      "prompt": "Who won the FIFA World Cup in 2018?",
+      "expected_answer": "France",
+      "category": "sports",
+      "difficulty": "easy"
+    },
+    {
+      "id": "fact_002",
+      "prompt": "What is the capital of Japan?",
+      "expected_answer": "Tokyo",
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "id": "fact_003",
+      "prompt": "Explain how photosynthesis works.",
+      "expected_answer": "Process where plants convert sunlight, carbon dioxide, and water into glucose and oxygen",
+      "category": "science",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fact_004",
+      "prompt": "When was the Declaration of Independence signed?",
+      "expected_answer": "July 4, 1776",
+      "category": "history",
+      "difficulty": "easy"
+    },
+    {
+      "id": "fact_005",
+      "prompt": "What is the largest planet in our solar system?",
+      "expected_answer": "Jupiter",
+      "category": "astronomy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "fact_006",
+      "prompt": "Who painted the Mona Lisa?",
+      "expected_answer": "Leonardo da Vinci",
+      "category": "art",
+      "difficulty": "easy"
+    },
+    {
+      "id": "fact_007",
+      "prompt": "What is the chemical symbol for gold?",
+      "expected_answer": "Au",
+      "category": "chemistry",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fact_008",
+      "prompt": "How many continents are there?",
+      "expected_answer": "7 (or 6 depending on classification)",
+      "category": "geography",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fact_009",
+      "prompt": "What is the speed of light in a vacuum?",
+      "expected_answer": "299,792,458 meters per second",
+      "category": "physics",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fact_010",
+      "prompt": "Who wrote Romeo and Juliet?",
+      "expected_answer": "William Shakespeare",
+      "category": "literature",
+      "difficulty": "easy"
+    }
+  ]
+}
