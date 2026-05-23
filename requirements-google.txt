@@ -1,0 +1,19 @@
+# Minimal requirements for Google Gemini API only
+# Use this for a lightweight setup with just Google models
+
+# Core evaluation framework
+numpy>=1.24.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Google API client
+google-generativeai>=0.3.0
+
+# Optional: Web interface
+streamlit>=1.28.0
+
+# Optional: Better logging
+loguru>=0.7.0
+
+# Development tools (optional)
+pytest>=7.4.0
