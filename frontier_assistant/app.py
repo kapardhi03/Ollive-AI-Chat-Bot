@@ -5,9 +5,15 @@ Main interface for the frontier model AI assistant (GPT-4, Claude, etc.)
 
 import streamlit as st
 import os
-from api_client import FrontierModelClient
-from memory import ConversationMemory
-from prompts import PromptTemplates
+try:
+    from .api_client import FrontierModelClient
+    from .memory import ConversationMemory
+    from .prompts import PromptTemplates
+except ImportError:
+    # Fallback for direct execution
+    from api_client import FrontierModelClient
+    from memory import ConversationMemory
+    from prompts import PromptTemplates
 
 def initialize_session():
     """Initialize session state variables"""

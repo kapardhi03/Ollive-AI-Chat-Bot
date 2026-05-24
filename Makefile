@@ -57,13 +57,13 @@ eval-full:
 oss-app:
 	@echo "Starting OSS Assistant..."
 	@echo "🌐 Open http://localhost:8501 in your browser"
-	streamlit run oss_assistant/app.py --server.port 8501
+	python -m streamlit run oss_assistant/app.py --server.port 8501
 
 # Start frontier assistant app
 frontier-app:
 	@echo "Starting Frontier Assistant..."
 	@echo "🌐 Open http://localhost:8502 in your browser"
-	streamlit run frontier_assistant/app.py --server.port 8502
+	python -m streamlit run frontier_assistant/app.py --server.port 8502
 
 # Start both apps in parallel
 apps:
@@ -71,8 +71,8 @@ apps:
 	@echo "🌐 OSS Assistant: http://localhost:8501"
 	@echo "🌐 Frontier Assistant: http://localhost:8502"
 	@echo "Press Ctrl+C to stop both"
-	streamlit run oss_assistant/app.py --server.port 8501 & \
-	streamlit run frontier_assistant/app.py --server.port 8502 & \
+	python -m streamlit run oss_assistant/app.py --server.port 8501 & \
+	python -m streamlit run frontier_assistant/app.py --server.port 8502 & \
 	wait
 
 # Start Jupyter notebook
