@@ -64,6 +64,7 @@ def run_google_evaluation():
 
         # Test different Google models (prioritizing confirmed working model)
         models_to_test = [
+            "gemini-1.5-flash"
             "gemini-3.1-flash-lite-preview",  # CONFIRMED WORKING - High-efficiency model
             "gemini-2.0-flash",  # Current stable model
             "gemini-3.1-pro-preview",  # Latest flagship model

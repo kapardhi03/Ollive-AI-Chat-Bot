@@ -13,13 +13,16 @@ from anthropic import Anthropic
 try:
     # Try the new package first
     import google.genai as genai
+    GOOGLE_GENAI_NEW = True
 except ImportError:
     try:
         # Fallback to the deprecated package
         import google.generativeai as genai
+        GOOGLE_GENAI_NEW = False
     except ImportError:
         # No Google package available
         genai = None
+        GOOGLE_GENAI_NEW = None
 import requests
 from threading import Lock
 
@@ -225,7 +228,10 @@ class FrontierModelClient:
         temperature: float, max_tokens: int, system_prompt_type: str
     ) -> str:
         """Generate response using OpenAI API"""
-        from prompts import PromptTemplates
+        try:
+            from .prompts import PromptTemplates
+        except ImportError:
+            from frontier_assistant.prompts import PromptTemplates
 
         client = self.clients.get("openai")
         if not client:
@@ -287,7 +293,10 @@ class FrontierModelClient:
         temperature: float, max_tokens: int, system_prompt_type: str
     ) -> str:
         """Generate response using Anthropic API"""
-        from prompts import PromptTemplates
+        try:
+            from .prompts import PromptTemplates
+        except ImportError:
+            from frontier_assistant.prompts import PromptTemplates
 
         client = self.clients.get("anthropic")
         if not client:
@@ -344,7 +353,10 @@ class FrontierModelClient:
         temperature: float, max_tokens: int, system_prompt_type: str
     ) -> str:
         """Generate response using Google Gemini API"""
-        from prompts import PromptTemplates
+        try:
+            from .prompts import PromptTemplates
+        except ImportError:
+            from frontier_assistant.prompts import PromptTemplates
 
         client = self.clients.get("google")
         if not client:
@@ -425,7 +437,10 @@ class FrontierModelClient:
         temperature: float, max_tokens: int, system_prompt_type: str
     ) -> str:
         """Generate response using DeepSeek API"""
-        from prompts import PromptTemplates
+        try:
+            from .prompts import PromptTemplates
+        except ImportError:
+            from frontier_assistant.prompts import PromptTemplates
 
         client_config = self.clients.get("deepseek")
         if not client_config:

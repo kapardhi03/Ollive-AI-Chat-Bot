@@ -19,7 +19,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 class OSSModel:
     """Handler for open-source language models"""
 
-    def __init__(self, model_name: str = "microsoft/Phi-3-mini-4k-instruct"):
+    def __init__(self, model_name: str = "unsloth/Llama-3.2-1B-Instruct"):
         self.model_name = model_name
         self.tokenizer = None
         self.model = None

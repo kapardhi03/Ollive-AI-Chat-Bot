@@ -13,9 +13,9 @@ from prompts import PromptTemplates
 
 # Model mapping
 MODEL_MAPPING = {
+    "Llama-3.2-1B-Instruct": "unsloth/Llama-3.2-1B-Instruct",
     "Phi-3-mini": "microsoft/Phi-3-mini-4k-instruct",
-    "Qwen2.5-0.5B-Instruct": "Qwen/Qwen2.5-0.5B-Instruct",
-    "Llama-3.2-1B-Instruct": "meta-llama/Llama-3.2-1B-Instruct"
+    "Qwen2.5-0.5B-Instruct": "Qwen/Qwen2.5-0.5B-Instruct"
 }
 
 @st.cache_resource
