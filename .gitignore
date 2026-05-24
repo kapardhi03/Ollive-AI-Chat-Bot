@@ -1,2 +1,47 @@
+# Environment variables
 .env
-venv
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# MacOS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Evaluation results and logs
+*evaluation*.json
+*gemini_evaluation*.json
+*results/
+google_demo_results/
+logs/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Model weights and cache
+models/
+cache/
+*.bin
+*.safetensors
+
+# Temporary files
+*.tmp
+*.temp
+temp/
